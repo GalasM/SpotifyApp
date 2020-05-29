@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playlist_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/playlist_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.7"
+        android:background="@drawable/button_shape"
+        android:onClick="startPlaylist"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/playlist_name" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/remove_playlist"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.15"
+        android:background="?attr/actionBarItemBackground"
+        app:srcCompat="@drawable/icon_delete_trash" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/edit_playlist"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.15"
+        android:background="?attr/actionBarItemBackground"
+        app:srcCompat="@drawable/icon_edit" />
+</LinearLayout>

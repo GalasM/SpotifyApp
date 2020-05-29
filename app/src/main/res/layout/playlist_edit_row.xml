@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playlist_edit_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/song_name_edit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:layout_weight="0.7"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/rate_song"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="?attr/actionBarItemBackground"
+        android:onClick="showDialog"
+        app:srcCompat="@drawable/icon_star"
+        android:layout_weight="0.15"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/remove_song"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="?attr/actionBarItemBackground"
+        app:srcCompat="@drawable/icon_delete_trash"
+        android:layout_weight="0.15"/>
+</LinearLayout>

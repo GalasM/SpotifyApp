@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playlist_new_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/song_name_new"
+        android:layout_width="0dp"
+        android:layout_weight="0.85"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/add_song"
+        android:layout_width="0dp"
+        android:layout_weight="0.15"
+        android:layout_height="match_parent"
+        android:background="?attr/actionBarItemBackground"
+        app:srcCompat="@drawable/icon_add" />
+</LinearLayout>
